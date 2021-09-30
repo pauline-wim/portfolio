@@ -1,0 +1,251 @@
+html {
+    scroll-behavior: smooth;
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    src: url(fonts/Aileron-Regular.otf);
+}
+
+body {
+    font-family: 'Aileron';
+    letter-spacing: 1px;
+    line-height: 2;
+    overflow-x: hidden;
+}
+
+/* HEADER */
+.cercle {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 4px dotted black;
+    top: 100px;
+    right: 500px;
+    transition: ease-in-out;
+    transition-duration: .5s;
+}
+
+.cercle:hover {
+    border: 6px dotted black;
+    width: 450px;
+    height: 450px;
+  }
+
+nav{
+    grid-area: nav;
+    position: fixed;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 50px 100px;
+    /* text-align: right; */
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:active {
+    color: indigo;
+}
+
+.breathe:hover {
+    animation-name: breathe;
+    animation-duration: 4.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  @keyframes breathe {
+    0% {
+      color: rgb(185, 0, 176);
+    }
+
+    50% {
+        color: rgba(255, 1, 77, 0.137);
+        }
+    
+    100% {
+        color: rgb(185, 0, 176);
+    }
+  }
+
+
+header {
+    background: yellow;
+    color: black;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-areas: "nav . name";  
+}
+
+h1 {
+    font: 700 8vw 'Aileron', sans-serif;
+    grid-area: name;
+    display: flex;
+    align-items: center;
+    /* border: 2px solid red; */
+    color: black;
+    background-clip: text;
+    animation: .8s shake infinite alternate;
+    animation-delay: 1s;
+}
+
+@keyframes shake {
+  0% { transform: skewX(-25deg); }
+  5% { transform: skewX(25deg); }
+  10% { transform: skewX(-45deg); }
+  15% { transform: skewX(45deg); }
+  20% { transform: skewX(0deg); }
+  100% { transform: skewX(0deg); }  }
+
+h1:hover {
+    animation: shake;
+    animation-play-state: paused;
+}
+
+/* HEADER */
+
+/* PRESENTATION */
+.prez, #contact {
+    height: 100vh;
+    background: yellow;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "photo para" ". but";
+}
+
+.prez p{
+    grid-area: para;
+}
+
+button {
+    grid-area: but;
+}
+
+.photo-border {
+    margin: 80px;
+    padding: 20px;
+    grid-area: photo;
+    border: 15px solid black;
+    border-radius: 50%;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portrait {
+    border-radius: 50%;
+    width: 400px;
+    filter: grayscale(100%) contrast(1.3);
+}
+
+/* PROJETS */
+.projets {
+    background: yellow;
+}
+
+.projets h1 {
+    padding: 40px 250px;
+}
+
+.proj {
+    height: 90vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.simplon_fil_rouge {
+    background: url(images/HEADER.jpg) no-repeat center/cover;
+}
+
+.simplon_ecommerce {
+    background: url(images/top-jeanne.jpg) no-repeat top/cover;
+}
+
+.title_box{
+    position: absolute;
+    right: 0;
+    height: 90vh;
+    width: 30%;
+    background: black;
+    color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left {
+    left: 0;
+}
+
+.title_box h3, .title_box h4 {
+    padding: 20px;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+.hack {
+    line-height: 0.8;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.title_box h4 {
+    text-align: right;
+    font-size: 12px;
+}
+
+/* PROJETS */
+
+/* CONTACT */
+#contact {
+    display: grid;
+    grid-column: 1fr 2fr 1fr;
+    grid-template-areas: 
+    ". h1 ."
+    ". h2 ."
+    ". social sign"
+}
+
+.contact h1 {
+    grid-area: h1;
+}
+
+.contact h2 {
+    grid-area: h2;
+}
+.contact .social {
+    grid-area: social;
+}
+
+.contact .signature {
+    grid-area: sign;
+    text-align: right;
+    justify-self: center;
+    align-self:center;
+}
+/* CONTACT */
