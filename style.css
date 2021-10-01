@@ -125,7 +125,7 @@ h1:hover {
 /* HEADER */
 
 /* PRESENTATION */
-.prez, #contact {
+.prez {
     height: 100vh;
     background: yellow;
     display: grid;
@@ -223,15 +223,19 @@ h3 {
 
 /* CONTACT */
 #contact {
+    height: 100vh;
+    background: yellow;
     display: grid;
     grid-column: 1fr 2fr 1fr;
     grid-template-areas: 
     ". h1 ."
     ". h2 ."
-    ". social sign"
+    ". social sign";
+    /* border: 2px solid red; */
 }
 
 .contact h1 {
+    /* border: 2px solid blue; */
     grid-area: h1;
 }
 
