@@ -129,23 +129,45 @@ h1:hover {
     height: 100vh;
     background: yellow;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "photo para" ". but";
+    grid-template-columns: 1fr 1fr 3fr;
+    grid-template-areas: ". photo para";
+    /* align-items: center; */
 }
 
-.prez p{
+.prez .droite{
+    align-self: center;
     grid-area: para;
+    width: 40vw;
 }
 
 button {
-    grid-area: but;
+    width: 20%;
+    height: 50px;
+    background: transparent;
+    border: 2px solid black;
+    margin-top: 40px;
+}
+
+button a {
+    font-size: 14px;
+    font-family: 'Aileron', sans-serif;
+}
+
+button a:hover {
+    color: rgb(185, 0, 176);
+    font-weight: 700;
+}
+
+button:hover {
+    border: 4px solid rgb(185, 0, 176);
+    color: rgb(185, 0, 176);
 }
 
 .photo-border {
     margin: 80px;
     padding: 20px;
     grid-area: photo;
-    border: 15px solid black;
+    border: 10px solid black;
     border-radius: 50%;
     width: fit-content;
     height: fit-content;
@@ -156,7 +178,7 @@ button {
 
 .portrait {
     border-radius: 50%;
-    width: 400px;
+    width: 350px;
     filter: grayscale(100%) contrast(1.3);
 }
 
@@ -177,11 +199,15 @@ button {
 }
 
 .simplon_fil_rouge {
-    background: url(images/HEADER.jpg) no-repeat center/cover;
+    background: url(images/hackeuse.png) no-repeat center/cover;
 }
 
 .simplon_ecommerce {
-    background: url(images/top-jeanne.jpg) no-repeat top/cover;
+    background: url(images/jeanne.png) no-repeat center/cover;
+}
+
+.simplon_serietv {
+    background: url(images/expanse.jpg) no-repeat top/cover;
 }
 
 .title_box{
