@@ -11,7 +11,23 @@
 </head>
 <body>
     <header>
-        <nav>
+        <div id="root" class="mob cube-mobile">
+
+            <a id="topnav_hamburger_icon" href="javascript:void(0);" onclick="showResponsiveMenu()"><img src="images/soleil-logo.png" alt="logo"></a>
+
+            <nav role="navigation" id="topnav_responsive_menu">
+                <ul id="topnav_menu">
+                    <a href="#prez"><li>A propos</li></a>
+                    <a href="#projets"><li>Projets</li></a>
+                    <a href="#avant"><li>Avant...</li></a>
+                    <a href="#contact"><li>Contact</li></a>
+                    <a href="#top" class="retour"><li class="retour">Retour</li></a>
+                </ul>
+            </nav>
+
+        </div>
+
+        <nav class="hide">
             <ul>
                 <li><a class="breathe" href="#prez">À propos</a></li>
                 <li><a class="breathe" href="#projets">Projets</a></li>
