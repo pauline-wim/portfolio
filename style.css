@@ -449,6 +449,7 @@ h3 {
     header {
         display: flex;
         align-content: center;
+        height: 50vh;
     }
 
     .cercle {
@@ -496,6 +497,14 @@ h3 {
         justify-content: space-between;
         padding: 0 20px;
         height: 80vh;
+    }
+
+    .contact h1 {
+        padding: 0;
+    }
+
+    .contact h2 {
+        font-size: 20px;
     }
 
 }
