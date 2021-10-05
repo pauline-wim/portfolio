@@ -19,6 +19,7 @@ body {
     line-height: 2;
     overflow-x: hidden;
     background: yellow;
+    scroll-behavior: smooth;
 }
 
 .mob {
@@ -275,11 +276,11 @@ h3 {
     ". h1 ."
     ". h2 ."
     ". social sign";
-    /* border: 2px solid red; */
+    border: 2px solid red;
 }
 
 .contact h1 {
-    /* border: 2px solid blue; */
+    border: 2px solid blue;
     grid-area: h1;
 }
 
@@ -443,10 +444,24 @@ h3 {
 }
 
 @media (max-width: 700px) {
-    body {
-        overflow: hidden;
+    header {
+        display: flex;
+        align-content: center;
     }
-    
+
+    .cercle {
+        display: block;
+        position: relative;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+
+    h1 {
+        font: 700 20vw 'Aileron', sans-serif;
+        padding-left: 40px;
+    }
+
     .prez .droite {
         width: 75vw;
         margin-left: 0;
@@ -463,10 +478,22 @@ h3 {
         flex-direction: column;
     }
 
+    .projets h1 {
+        padding: 20px 40px;
+    }
+
     .title_box{
         position: relative;
         width: 100vw;
         height: 40vh;
+    }
+
+    #contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0 20px;
+        height: 80vh;
     }
 
 }
