@@ -13,9 +13,18 @@
     <header>
         <div id="root" class="mob cube-mobile">
 
-            <a id="topnav_hamburger_icon" href="javascript:void(0);" onclick="showResponsiveMenu()"><img src="images/soleil-logo.png" alt="logo"></a>
+            <a id="topnav_hamburger_icon" href="javascript:void(0);" onclick="showResponsiveMenu()">
+                <div class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </a>
 
             <nav role="navigation" id="topnav_responsive_menu">
+                <a id="topnav_hamburger_icon" href="javascript:void(0);" onclick="showResponsiveMenu()">
+                    <img src="images/cross.png" alt="croix">
+                </a>
                 <ul id="topnav_menu">
                     <a href="#prez"><li>A propos</li></a>
                     <a href="#projets"><li>Projets</li></a>
@@ -41,7 +50,15 @@
 
     <!-- Presentation -->
     <section id="prez" class="prez">
-        <div class="photo-border"><img class="portrait" src="images/moi.png" alt=""></div>
+        <div class="gauche">
+        <div class="photo-border">
+            <img class="portrait" src="images/moi.png" alt="">
+        </div>
+        <p>
+            Le monde évolue vers le numérique
+            <br> et je tiens à faire partie du changement.
+        </p>
+        </div>
         <div class="droite">
             <p>2020 aura été une année révélatrice pour nous tous.
                 <br>
@@ -62,9 +79,6 @@
                 <br>
             Je cherche une alternance pour février 2022, sur un rythme de 4 jours en entreprise et 1 jour en formation avec OpenClassroom.
                 <br><br>
-            Le monde évolue vers le numérique
-                <br> et je tiens à faire partie du changement.
-                <br>
             #Javascript #Node.js #React 
             </p>
             <button onclick="window.location.href='CV_Wimmer_dev.pdf'" type="button">Curriculum Vitae</button>
