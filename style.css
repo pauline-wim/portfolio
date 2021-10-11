@@ -18,7 +18,7 @@ body {
     letter-spacing: 1px;
     line-height: 2;
     overflow-x: hidden;
-    background: yellow;
+    background: #ffd527;
     scroll-behavior: smooth;
 }
 
@@ -99,7 +99,7 @@ a:active {
 
 
 header {
-    background: yellow;
+    /* background: #ffd527; */
     color: black;
     height: 100vh;
     display: grid;
@@ -137,7 +137,7 @@ h1:hover {
 /* PRESENTATION */
 .prez {
     height: 100vh;
-    background: yellow;
+    /* background: #ffd527; */
     display: grid;
     grid-template-columns: 1fr 1fr 3fr;
     grid-template-areas: ". photo para";
@@ -202,9 +202,9 @@ button:hover {
 }
 
 /* PROJETS */
-.projets {
-    background: yellow;
-}
+/* .projets {
+    background: #ffd527;
+} */
 
 .projets h1 {
     padding: 40px 250px;
@@ -236,7 +236,7 @@ button:hover {
     height: 90vh;
     width: 30%;
     background: black;
-    color: yellow;
+    color: #ffd527;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -252,6 +252,7 @@ button:hover {
 
 h3 {
     font-size: clamp(20px, 2vw, 40px);
+    text-transform: uppercase;
 }
 
 .hack {
@@ -270,7 +271,7 @@ h3 {
 /* CONTACT */
 #contact {
     height: 100vh;
-    background: yellow;
+    /* background: #ffd527; */
     display: grid;
     grid-column: 1fr 2fr 1fr;
     grid-template-areas: 
@@ -432,7 +433,7 @@ h3 {
 }
 
 #topnav_responsive_menu a {
-    color: yellow;
+    color: #ffd527;
 }
 
 #topnav_responsive_menu a:active {
@@ -441,7 +442,7 @@ h3 {
 
 .retour {
     text-decoration: none;
-    color: blue;
+    color: indigo;
 }
 /* -------------------- Menu Burger ----------------------- */
 
@@ -497,6 +498,13 @@ h3 {
         position: relative;
         width: 100vw;
         height: 40vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .title_box h4 {
+        align-self: flex-end;
     }
 
     #contact {
