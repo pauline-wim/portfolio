@@ -428,8 +428,8 @@ h3 {
 }
 
 #topnav_responsive_menu li {
-    font-size: 14px;
-    padding: 4% 0;
+    font-size: 16px;
+    padding: 5% 0;
 }
 
 #topnav_responsive_menu a {
@@ -518,7 +518,7 @@ h3 {
         flex-direction: column;
         justify-content: space-between;
         padding: 0 20px;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         height: 85vh;
     }
 
