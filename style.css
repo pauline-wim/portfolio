@@ -442,7 +442,7 @@ h3 {
 
 .retour {
     text-decoration: none;
-    color: indigo;
+    color: rgb(185, 0, 176);
 }
 /* -------------------- Menu Burger ----------------------- */
 
@@ -455,15 +455,21 @@ h3 {
 
     header {
         display: flex;
-        align-content: center;
-        height: 40vh;
+        height: 75vh;
+        margin-bottom: 80px;
+    }
+
+    header h1 {
+        align-self: flex-end;
     }
 
     .cercle {
         display: block;
-        position: relative;
-        width: 50px;
-        height: 50px;
+        position: absolute;
+        top: 400px;
+        left: 30px;
+        width: 200px;
+        height: 200px;
         border-radius: 50%;
     }
 
@@ -512,6 +518,7 @@ h3 {
         flex-direction: column;
         justify-content: space-between;
         padding: 0 20px;
+        margin-bottom: 20px;
         height: 85vh;
     }
 
