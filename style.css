@@ -465,8 +465,8 @@ h3 {
 
     .cercle {
         display: block;
-        position: fixed;
-        top: 400px;
+        position: absolute;
+        top: 350px;
         left: 30px;
         width: 200px;
         height: 200px;
