@@ -161,7 +161,7 @@ h1:hover {
     grid-template-areas: ". photo para";
     gap: 20px;
     line-height: 1.4;
-    padding-top: 5rem;
+    padding-top: 2rem;
     /* align-items: center; */
     /* border: 2px solid white; */
 }
@@ -229,6 +229,11 @@ button:hover {
 
 /* !PROJETS */
 
+.separate {
+    height: 8rem;
+    background: black;
+}
+
 .projets {
     background: black;
 }
@@ -273,7 +278,7 @@ button:hover {
     position: absolute;
     right: 0;
     height: 90vh;
-    width: 30%;
+    width: 32%;
     /* background: black; */
     background-color: #ffd527;
     /* background: white; */
