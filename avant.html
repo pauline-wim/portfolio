@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ça c'était avant...</title>
+    <!-- links -->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="avant.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo-sun-pw.png" />
+</head>
+
+<body>
+    <header>
+        <p id="top"></p>
+        <div id="root" class="mob cube-mobile">
+
+            <a id="topnav_hamburger_icon" href="javascript:void(0);" onclick="showResponsiveMenu()">
+                <div class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </a>
+
+            <nav role="navigation" id="topnav_responsive_menu">
+                <a id="topnav_hamburger_icon" href="javascript:void(0);" onclick="showResponsiveMenu()">
+                    <img src="images/cross.png" alt="croix">
+                </a>
+                <ul id="topnav_menu">
+                    <a href="#prez"><li>A propos</li></a>
+                    <a href="#projets"><li>Projets</li></a>
+                    <a href="#avant"><li>Avant...</li></a>
+                    <a href="#contact"><li>Contact</li></a>
+                    <a href="#top" class="retour"><li class="retour">Retour ↑</li></a>
+                </ul>
+            </nav>
+
+        </div>
+
+        <nav class="hide">
+            <ul>
+                <li><a class="breathe" href="#prez">À propos</a></li>
+                <li><a class="breathe" href="#projets">Projets</a></li>
+                <li><a class="breathe" href="#avant">Avant...</a></li>
+                <li><a class="breathe" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Projets Artistiques</h1>
+    </header>
+
+    <!-- MAIN -->
+
+    <!-- CONTACT -->
+    <footer id="contact" class="contact">
+        <h1>Contact</h1>
+        <h2><a class="breathe" href="mailto:pauline.wimmer@gmail.com">pauline.wimmer@gmail.com</a></h2>
+        <div class="social">
+            <h4>Social</h4>
+            <a class="breathe" href="https://github.com/pauline-wim" target="_blank"><p>GitHub</p></a>
+            <a class="breathe" href="https://www.linkedin.com/in/pauline-wimmer/" target="_blank"><p>LinkedIn</p></a>
+            <a class="breathe" href="https://vimeo.com/paulinewimmer" target="_blank"><p>Vimeo</p></a>
+        </div>
+        <div class="signature">
+            <p>© 2021 Pauline Wimmer.</p>
+            <p><span>Portfolio construit de A à Z <br> avec beaucoup d'amour <br> & d'attention.</span></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
