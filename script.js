@@ -13,3 +13,20 @@ function showResponsiveMenu() {
       root.style.overflowY = "";
     }
   }
+
+  // POP-UP
+
+const eventBtn = document.getElementById('eventBtn');
+const cv = document.getElementById('cv');
+
+eventBtn.addEventListener('click', open);
+cv.addEventListener('click', close);
+window.removeEventListener('click', close);
+
+function open(){
+  cv.style.display = 'flex';
+}
+
+function close(){
+  cv.style.display = 'none';
+}
