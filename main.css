@@ -96,3 +96,47 @@ a:active {
         color: rgba(250, 250, 250, 0.8);
     }
   }
+
+/* !CONTACT */
+#contact {
+    height: 100vh;
+    /* background: #ffd527; */
+    display: grid;
+    grid-column: 1fr 2fr 1fr;
+    grid-template-areas: 
+    ". h1 ."
+    ". h2 ."
+    ". social sign"
+    /* border: 2px solid red; */
+}
+
+.contact h1 {
+    /* border: 2px solid blue; */
+    grid-area: h1;
+}
+
+.contact h2 {
+    grid-area: h2;
+}
+.contact .social {
+    grid-area: social;
+}
+
+.contact .signature {
+    grid-area: sign;
+    line-height: 1.4;
+    text-align: right;
+    justify-self: center;
+    align-self:center;
+}
+
+.signature p {
+    font-size: 1.2rem;
+}
+
+.signature span {
+    font-size: 1rem;
+    font-style: italic;
+}
+
+/* CONTACT */
