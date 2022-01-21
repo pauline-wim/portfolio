@@ -261,6 +261,17 @@ h3 {
     font-size: 1.2rem;
 }
 
+.title_box_art {
+    padding-top: 20px;
+    margin: 1em;
+}
+
+.title_box .title-proj-art {
+    padding: 0 20px;
+    margin: 0;
+    line-height: 1.2;
+}
+
 /* PROJETS */
 
 
