@@ -30,7 +30,7 @@ body {
     display: none;
 }
 
-/* HEADER */
+/* !HEADER */
 .cercle {
     position: absolute;
     width: 350px;
@@ -134,7 +134,7 @@ h1:hover {
 
 /* HEADER */
 
-/* PRESENTATION */
+/* !PRESENTATION */
 .prez {
     height: 100vh;
     /* background: #ffd527; */
@@ -201,7 +201,12 @@ button:hover {
     filter: grayscale(100%) contrast(1.3);
 }
 
-/* PROJETS */
+.prez span {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+/* !PROJETS */
 /* .projets {
     background: #ffd527;
 } */
@@ -268,7 +273,7 @@ h3 {
 
 /* PROJETS */
 
-/* CONTACT */
+/* !CONTACT */
 #contact {
     height: 100vh;
     /* background: #ffd527; */
@@ -301,7 +306,7 @@ h3 {
 }
 /* CONTACT */
 
-/* ----- RESPONSIVE ----- */
+/* !----- RESPONSIVE ----- */
 
 @media (max-width: 1000px) {
     .cercle {
