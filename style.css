@@ -327,7 +327,7 @@ h3 {
     grid-template-areas: 
     ". h1 ."
     ". h2 ."
-    ". social sign";
+    ". social sign"
     /* border: 2px solid red; */
 }
 
@@ -345,10 +345,21 @@ h3 {
 
 .contact .signature {
     grid-area: sign;
+    line-height: 1.4;
     text-align: right;
     justify-self: center;
     align-self:center;
 }
+
+.signature p {
+    font-size: 1.2rem;
+}
+
+.signature span {
+    font-size: 1rem;
+    font-style: italic;
+}
+
 /* CONTACT */
 
 /* !------------ RESPONSIVE ------------- */
