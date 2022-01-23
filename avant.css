@@ -33,7 +33,7 @@ a {
 
 /* !MAIN */
 
-/* section videos */
+/* ------- section videos ------- */
 
 #videos {
     display: grid;
@@ -94,7 +94,7 @@ a {
     grid-area: 'v4';
 }
 
-/* section photos */
+/* ------- section photos ------- */
 
 #photos {
     display: grid;
@@ -119,6 +119,8 @@ a {
     /* border: 2px solid violet; */
 }
 
+/* serie 2 */
+
 .serie2 {
     display: flex;
     flex-direction: column;
@@ -133,6 +135,31 @@ a {
     box-shadow: 0px 4px 15px 15px rgba(0, 0, 0, 0.5);
     width: 101%;
 }
+
+/* popup serie dredge */
+
+#dredgeBtn:hover {
+    cursor: pointer;
+}
+
+#dredge {
+    position: fixed;
+    z-index: 4;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    display: none;
+}
+
+.dredge-img {
+    height: 80%;
+}
+
+/* serie 1 */
 
 .serie1 {
     display: flex;

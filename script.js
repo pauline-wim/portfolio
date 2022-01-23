@@ -1,8 +1,8 @@
 //  MENU RESPONSIVE
 function showResponsiveMenu() {
-    var menu = document.getElementById("topnav_responsive_menu");
-    var icon = document.getElementById("topnav_hamburger_icon");
-    var root = document.getElementById("root");
+    let menu = document.getElementById("topnav_responsive_menu");
+    let icon = document.getElementById("topnav_hamburger_icon");
+    let root = document.getElementById("root");
     if (menu.className === "") {
       menu.className = "open";
       icon.className = "open";
@@ -14,7 +14,7 @@ function showResponsiveMenu() {
     }
   }
 
-  // POP-UP
+  // POP-UP - CV
 
 const eventBtn = document.getElementById('eventBtn');
 const cv = document.getElementById('cv');
@@ -23,10 +23,27 @@ eventBtn.addEventListener('click', open);
 cv.addEventListener('click', close);
 window.removeEventListener('click', close);
 
-function open(){
+function open() {
   cv.style.display = 'flex';
 }
 
-function close(){
+function close() {
   cv.style.display = 'none';
+}
+
+// POP-UP - SERIES PHOTO
+
+// const portraitBtn = document.getElementById('portraitBtn');
+const dredgeBtn = document.getElementById('dredgeBtn');
+const dredge = document.getElementById('dredge');
+
+dredgeBtn.addEventListener('click', openDredge);
+dredge.addEventListener('click', closeDredge);
+
+function openDredge() {
+  dredge.style.display = 'flex';
+}
+
+function closeDredge() {
+  dredge.style.display = 'none';
 }
