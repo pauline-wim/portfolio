@@ -1,14 +1,17 @@
 /* !GENERAL */
 
 html {
-    scroll-behavior: smooth;
-    font-size: 62.5%; /* 1rem = 10px */
+  scroll-behavior: smooth;
+  font-size: 62.5%; /* 1rem = 10px */
+  overflow-x: hidden;
 }
 
-*, ::before, ::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* @font-face {
@@ -17,126 +20,139 @@ html {
 } */
 
 @font-face {
-    font-family: 'Space';
-    src: url(fonts/SpaceGrotesk-VariableFont_wght.ttf);
+  font-family: "Space";
+  src: url(fonts/SpaceGrotesk-VariableFont_wght.ttf);
 }
 
 body {
-    font-family: 'Space', sans-serif;
-    letter-spacing: 1px;
-    line-height: 2;
-    overflow-x: hidden;
-    background: #ffd527;
-    /* background: white; */
-    scroll-behavior: smooth;
+  font-family: "Space", sans-serif;
+  letter-spacing: 1px;
+  line-height: 2;
+  overflow-x: hidden;
+  position: relative;
+  background: #ffd527;
+  /* background: white; */
+  /* scroll-behavior: smooth; */
 }
 
 h2 {
-    font-size: 2.4rem;
+  font-size: 2.4rem;
 }
 
-h4, p {
-    font-size: 1.6rem;
+h4,
+p {
+  font-size: 1.6rem;
 }
 
 .mob {
-    display: none;
+  display: none;
 }
 
 #topnav_hamburger_icon {
-    display: none;
+  display: none;
+}
+
+svg {
+  width: 20px;
+  height: 20px;
+  align-self: center;
 }
 
 /* NAV */
 
-nav{
-    grid-area: nav;
-    position: fixed;
-    z-index: 20;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 50px 100px;
-    /* text-align: right; */
-    font-size: 1.8rem;
-    text-transform: uppercase;
+nav {
+  grid-area: nav;
+  position: fixed;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 50px 100px;
+  /* text-align: right; */
+  font-size: 1.8rem;
+  text-transform: uppercase;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 a:active {
-    color: indigo;
+  color: indigo;
 }
 
 .breathe:hover {
-    animation-name: breathe;
-    animation-duration: 4.5s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+  animation-name: breathe;
+  animation-duration: 4.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes breathe {
+  0% {
+    color: rgba(250, 250, 250, 0.8);
   }
 
-  @keyframes breathe {
-    0% {
-      color: rgba(250, 250, 250, 0.8);
-    }
-
-    50% {
-        color: rgba(250, 250, 250, 0.137);
-        }
-    
-    100% {
-        color: rgba(250, 250, 250, 0.8);
-    }
+  50% {
+    color: rgba(250, 250, 250, 0.137);
   }
+
+  100% {
+    color: rgba(250, 250, 250, 0.8);
+  }
+}
 
 /* !CONTACT */
 #contact {
-    height: 100vh;
-    /* background: #ffd527; */
-    display: grid;
-    grid-column: 1fr 2fr 1fr;
-    grid-template-areas: 
+  height: 100vh;
+  /* background: #ffd527; */
+  display: grid;
+  grid-column: 1fr 2fr 1fr;
+  grid-template-areas:
     ". h1 ."
     ". h2 ."
-    ". social sign"
-    /* border: 2px solid red; */
+    ". social sign";
+  /* border: 2px solid red; */
 }
 
 .contact h1 {
-    /* border: 2px solid blue; */
-    grid-area: h1;
+  /* border: 2px solid blue; */
+  grid-area: h1;
 }
 
 .contact h2 {
-    grid-area: h2;
+  grid-area: h2;
 }
 .contact .social {
-    grid-area: social;
+  grid-area: social;
+}
+
+.contact .social a {
+  display: flex;
+  gap: 0.3rem;
 }
 
 .contact .signature {
-    grid-area: sign;
-    line-height: 1.4;
-    text-align: right;
-    justify-self: center;
-    align-self:center;
+  grid-area: sign;
+  line-height: 1.4;
+  text-align: right;
+  justify-self: center;
+  align-self: center;
 }
 
 .signature p {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 .signature span {
-    font-size: 1rem;
-    font-style: italic;
+  font-size: 1rem;
+  font-style: italic;
 }
 
 /* CONTACT */
