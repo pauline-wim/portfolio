@@ -12,9 +12,9 @@ function showResponsiveMenu() {
       icon.className = "";
       root.style.overflowY = "";
     }
-  }
+}
 
-  // POP-UP - CV
+// POP-UP - CV
 
 const eventBtn = document.getElementById('eventBtn');
 const cv = document.getElementById('cv');

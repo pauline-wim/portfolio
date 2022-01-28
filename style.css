@@ -259,7 +259,7 @@ button:hover {
   filter: opacity(50%);
 }
 
-.proj img:hover {
+.proj:hover img {
   filter: none;
 }
 
@@ -406,6 +406,11 @@ h3 {
     padding-bottom: 2rem;
     display: flex;
     align-items: center;
+  }
+
+  .cv-img {
+    width: 300px;
+    height: auto;
   }
 
   /* -------------------- Menu Burger ----------------------- */

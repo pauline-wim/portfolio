@@ -156,3 +156,132 @@ a:active {
 }
 
 /* CONTACT */
+
+/* !-------------- Responsive -------------- */
+
+@media (max-width: 950px) {
+  #contact {
+    grid-column: 1fr auto auto;
+  }
+
+  /* -------------------- Menu Burger ----------------------- */
+  .hide {
+    display: none;
+  }
+
+  .mob {
+    display: block;
+    position: fixed;
+  }
+
+  .burger {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .burger span {
+    width: 45px;
+    height: 5px;
+    background-color: black;
+    border-radius: 15px;
+  }
+
+  #topnav_hamburger_icon {
+    margin: 20px;
+    position: fixed;
+    display: block;
+  }
+
+  #root {
+    position: fixed;
+    overflow-x: hidden;
+    z-index: 99;
+  }
+
+  #topnav_responsive_menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    width: 55vw;
+    height: 55vh;
+
+    z-index: 99;
+
+    transform-origin: 0% 0%;
+    transform: translate(-200%, 0);
+
+    transition: transform 1s;
+  }
+
+  /* and let's slide it in from the left */
+  #topnav_responsive_menu.open {
+    transform: none;
+    position: fixed;
+  }
+
+  #topnav_responsive_menu ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 40px;
+    text-align: right;
+    background: rgba(0, 0, 0, 0.85);
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  #topnav_responsive_menu li {
+    font-size: 16px;
+    padding: 5% 0;
+  }
+
+  #topnav_responsive_menu a {
+    color: #ffd527;
+  }
+
+  #topnav_responsive_menu a:active {
+    color: indigo;
+  }
+
+  .retour {
+    text-decoration: none;
+    color: rgb(185, 0, 176);
+  }
+  /* -------------------- Menu Burger ----------------------- */
+}
+
+@media (max-width: 700px) {
+  h1 {
+    font: 700 20vw "Aileron", sans-serif;
+    letter-spacing: none;
+    padding-top: 40px;
+    padding-left: 40px;
+  }
+
+  #contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-bottom: 30px;
+    height: 85vh;
+  }
+
+  .contact h1 {
+    padding: 0;
+    padding-top: 10px;
+  }
+
+  .contact h2 {
+    font-size: 20px;
+  }
+
+  .contact .signature {
+    justify-self: flex-end;
+    align-self: flex-end;
+  }
+}
