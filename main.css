@@ -63,7 +63,7 @@ svg {
 nav {
   grid-area: nav;
   position: fixed;
-  z-index: 20;
+  z-index: 3;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -197,7 +197,7 @@ a:active {
   #root {
     position: fixed;
     overflow-x: hidden;
-    z-index: 99;
+    z-index: 3;
   }
 
   #topnav_responsive_menu {
@@ -209,7 +209,7 @@ a:active {
     width: 55vw;
     height: 55vh;
 
-    z-index: 99;
+    z-index: 3;
 
     transform-origin: 0% 0%;
     transform: translate(-200%, 0);
