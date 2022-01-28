@@ -34,19 +34,19 @@ function close() {
 // POP-UP - SERIES PHOTO
 
 // const portraitBtn = document.getElementById('portraitBtn');
-const dredgeBtn = document.querySelector('#dredgeBtn');
-const dredge = document.querySelector('#dredge');
+const dredgeBtn = document.getElementById('dredgeBtn');
+const dredge = document.getElementById('dredge');
 
 dredgeBtn.addEventListener('click', openDredge);
 dredge.addEventListener('click', closeDredge);
 window.removeEventListener('click', closeDredge);
 
 function openDredge() {
-  // dredge.style.display = 'flex';
-  dredge.setAttribute('style', 'display: flex');
+  dredge.style.display = 'flex';
+  // dredge.setAttribute('style', 'display: flex');
 }
 
 function closeDredge() {
-  dredge.setAttribute('style', 'display: none');
-  // dredge.style.display = 'none';
+  // dredge.setAttribute('style', 'display: none');
+  dredge.style.display = 'none';
 }
