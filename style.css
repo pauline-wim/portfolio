@@ -397,6 +397,7 @@ h3 {
   }
 
   .prez .gauche {
+    width: 85vw;
     padding-bottom: 2rem;
     align-items: center;
   }
@@ -535,7 +536,6 @@ h3 {
   }
 
   .prez .gauche p {
-    width: 85vw;
     font-size: 1.4rem;
   }
 
