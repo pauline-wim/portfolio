@@ -109,6 +109,7 @@ a:active {
 }
 
 /* !CONTACT */
+
 #contact {
   height: 100vh;
   /* background: #ffd527; */
@@ -135,7 +136,7 @@ a:active {
 
 .contact .social a {
   display: flex;
-  gap: 0.3rem;
+  gap: 0.6rem;
 }
 
 .contact .signature {
