@@ -326,6 +326,17 @@ h3 {
 /* PROJETS */
 
 /* !------------ RESPONSIVE ------------- */
+@media (max-width: 1080px) {
+  .portrait {
+    width: 250px;
+  }
+
+  .prez .droite {
+    width: 60vw;
+    margin-left: 10px;
+    margin-right: 40px;
+  }
+}
 
 @media (max-width: 1000px) {
   .cercle {
@@ -368,17 +379,21 @@ h3 {
   }
 }
 
+.separate {
+  height: 6rem;
+}
+
+.proj {
+  height: auto;
+}
+
 @media (max-width: 950px) {
   .prez {
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 30px 30px;
-  }
-
-  #contact {
-    grid-column: 1fr auto auto;
+    padding: 0 0 20px;
   }
 
   .prez .gauche {
@@ -390,6 +405,10 @@ h3 {
   .cv-img {
     width: 300px;
     height: auto;
+  }
+
+  #contact {
+    grid-column: 1fr auto auto;
   }
 
   /* -------------------- Menu Burger ----------------------- */
@@ -511,7 +530,7 @@ h3 {
   }
 
   .prez .droite {
-    width: 75vw;
+    width: 85vw;
     margin-left: 0;
     margin-right: 0;
   }
