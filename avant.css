@@ -175,13 +175,9 @@ a {
 
 /* popup serie dredge */
 
-#dredgeBtn:hover {
-  cursor: pointer;
-}
-
 #dredge {
   position: fixed;
-  z-index: 4;
+  z-index: 99;
   align-items: center;
   justify-content: center;
   top: 0;
@@ -192,6 +188,9 @@ a {
   display: none;
 }
 
+#dredgeBtn:hover {
+  cursor: pointer;
+}
 .dredge-img {
   height: 80%;
 }
