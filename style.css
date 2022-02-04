@@ -291,8 +291,8 @@ h3 {
 
 .projet_art {
   display: grid;
-  grid-template-columns: 1fr 32%;
-  grid-template-areas: "img title_box";
+  grid-template-columns: 32% 1fr;
+  grid-template-areas: "title_box img";
 }
 
 .title_box {
