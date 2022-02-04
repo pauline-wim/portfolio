@@ -1,150 +1,244 @@
 <!DOCTYPE html>
 <html lang="efr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio | Pauline Wimmer</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" type="image/x-icon" href="images/logo-sun-pw.png" />
-
-</head>
-<body>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="images/logo-sun-pw.png"
+    />
+  </head>
+  <body>
     <header>
-        <p id="top"></p>
-        <div id="root" class="mob cube-mobile">
+      <p id="top"></p>
+      <div id="root" class="mob cube-mobile">
+        <a
+          id="topnav_hamburger_icon"
+          href="javascript:void(0);"
+          onclick="showResponsiveMenu()"
+        >
+          <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </a>
 
-            <a id="topnav_hamburger_icon" href="javascript:void(0);" onclick="showResponsiveMenu()">
-                <div class="burger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </a>
-
-            <nav role="navigation" id="topnav_responsive_menu">
-                <a id="topnav_hamburger_icon" href="javascript:void(0);" onclick="showResponsiveMenu()">
-                    <img src="images/cross.png" alt="croix">
-                </a>
-                <ul id="topnav_menu">
-                    <a href="#prez"><li>A propos</li></a>
-                    <a href="#projets"><li>Projets</li></a>
-                    <!-- <a href="#avant"><li>Avant...</li></a> -->
-                    <a href="#contact"><li>Contact</li></a>
-                    <a href="#top" class="retour"><li class="retour">Haut de page ↑</li></a>
-                </ul>
-            </nav>
-
-        </div>
-
-        <nav class="hide">
-            <ul>
-                <li><a class="breathe" href="#prez">À propos</a></li>
-                <li><a class="breathe" href="#projets">Projets</a></li>
-                <!-- <li><a class="breathe" href="#avant">Avant...</a></li> -->
-                <li><a class="breathe" href="#contact">Contact</a></li>
-            </ul>
+        <nav role="navigation" id="topnav_responsive_menu">
+          <a
+            id="topnav_hamburger_icon"
+            href="javascript:void(0);"
+            onclick="showResponsiveMenu()"
+          >
+            <img src="images/cross.png" alt="croix" />
+          </a>
+          <ul id="topnav_menu">
+            <a href="#prez"><li>A propos</li></a>
+            <a href="#projets"><li>Projets</li></a>
+            <!-- <a href="#avant"><li>Avant...</li></a> -->
+            <a href="#contact"><li>Contact</li></a>
+            <a href="#top" class="retour"
+              ><li class="retour">Haut de page ↑</li></a
+            >
+          </ul>
         </nav>
-        <h1>Pauline <br> Wimmer</h1>
-        <div class="cercle"></div>
+      </div>
+
+      <nav class="hide">
+        <ul>
+          <li><a class="breathe" href="#prez">À propos</a></li>
+          <li><a class="breathe" href="#projets">Projets</a></li>
+          <!-- <li><a class="breathe" href="#avant">Avant...</a></li> -->
+          <li><a class="breathe" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <h1>
+        Pauline <br />
+        Wimmer
+      </h1>
+      <div class="cercle"></div>
     </header>
 
     <div class="separate"></div>
 
     <!-- !Presentation -->
     <section id="prez" class="prez">
-        <!-- gauche -->
-        <div class="gauche">
-            <div class="photo-border">
-                <img class="portrait" src="images/moi.png" alt="">
-            </div>
-            <p>
-                Le monde évolue vers le numérique et je tiens à faire partie du changement.
-            </p>
+      <!-- gauche -->
+      <div class="gauche">
+        <div class="photo-border">
+          <img class="portrait" src="images/moi.png" alt="" />
         </div>
-        <!-- droite -->
-        <div class="droite">
-            <p>2020 aura été une année révélatrice pour nous tous.
-                <br>
-            Elle m'aura poussée à me diversifier et à mieux définir mes envies.
-                <br><br>
-            Ancienne médiatrice culturelle, avec une appétence pour les nouvelles technologies. Je pars aux États-Unis en 2019, pour y suivre une formation de réalisation cinématographique.
-                <br><br>
-            Je rentre en France fin 2020 et je ressens le besoin de préciser mon parcours et consolider mon projet professionnel.
-                <br><br>
-            Je fais une première formation dans le développement web en juin 2021,
-            ou j'apprends à prendre le contrôle de la page web.
-                <br><br>
-            <span>Le code devient mon nouveau médium de création.</span>
-                <br><br>
-            Aujourd'hui je n'ai qu'une hâte : revenir à la vie active.
-                <br>
-            Je suis actuellement en formation chez Konexio, pour devenir développeuse web.
-                <br><br>
-            Je suis à la recherche d'un stage de 6 mois pour Mai 2022.
-                <br><br>
-            <span>Stack : </span><br> HTML5 / CSS3 / javascript / node.js / React / Python3 / Git / github / SQL / Responsive Design / Figma
-            </p>
-            <!-- <button class="breathe" onclick="window.location.href='cv/WimmerCV-english4.pdf'" type="button">Curriculum Vitae</button> -->
-            <button id="eventBtn" type="button">Curriculum Vitae</button>
-
-        </div>
-        <div id="cv">
-            <img class="cv-img" src="cv/PW-CV-english.png" alt="CV Wimmer in english">
-        </div>
+        <p>
+          Le monde évolue vers le numérique et je tiens à faire partie du
+          changement.
+        </p>
+      </div>
+      <!-- droite -->
+      <div class="droite">
+        <p>
+          2020 aura été une année révélatrice pour nous tous.
+          <br />
+          Elle m'aura poussée à me diversifier et à mieux définir mes envies.
+          <br /><br />
+          Ancienne médiatrice culturelle, avec une appétence pour les nouvelles
+          technologies. Je pars aux États-Unis en 2019, pour y suivre une
+          formation de réalisation cinématographique.
+          <br /><br />
+          Je rentre en France fin 2020 et je ressens le besoin de préciser mon
+          parcours et consolider mon projet professionnel.
+          <br /><br />
+          Je fais une première formation dans le développement web en juin 2021,
+          ou j'apprends à prendre le contrôle de la page web.
+          <br /><br />
+          <span>Le code devient mon nouveau médium de création.</span>
+          <br /><br />
+          Aujourd'hui je n'ai qu'une hâte : revenir à la vie active.
+          <br />
+          Je suis actuellement en formation chez Konexio, pour devenir
+          développeuse web.
+          <br /><br />
+          Je suis à la recherche d'un stage de 6 mois pour Mai 2022.
+          <br /><br />
+          <span>Stack : </span><br />
+          HTML5 / CSS3 / javascript / node.js / React / Python3 / Git / github /
+          SQL / Responsive Design / Figma
+        </p>
+        <!-- <button class="breathe" onclick="window.location.href='cv/WimmerCV-english4.pdf'" type="button">Curriculum Vitae</button> -->
+        <button id="eventBtn" type="button">Curriculum Vitae</button>
+      </div>
+      <div id="cv">
+        <img
+          class="cv-img"
+          src="cv/PW-CV-english.png"
+          alt="CV Wimmer in english"
+        />
+      </div>
     </section>
 
     <!-- !PROJETS -->
     <div class="separate"></div>
     <main id="projets" class="projets">
-        <h1>Projets</h1>
-        <!-- Projet 1 -->
-        <a class="move" href="https://pauline-wim.github.io/hackeuse/index.html" target="_blank">
-            <div class="proj simplon_fil_rouge">
-                <img class="img hacker" src="images/hackeuse.png" alt="">
-                <div class="title_box row">
-                    <h3 class="hack">La <br> Hack <br> euse <br> au <br> Ciné <br> ma</h3>
-                    <h4>Projet fil rouge <br>HTML / CSS / JS<br> Simplon | Paris <br> Juillet 2021</h4>
-                </div>
-            </div>
-        </a>
+      <h1>Projets</h1>
+      <!-- Projet 6 -->
+      <a
+        class="move"
+        href="https://pauline-wim.github.io/konexio-projet-fullstack/front/index.html"
+        target="_blank"
+      >
+        <div class="proj konexio_API">
+          <img class="opacity" src="images/restcountries.png" alt="" />
+          <div class="title_box">
+            <h3 class="hack">
+              Projet <br />
+              Rest API
+            </h3>
+            <h4>
+              Déployer une API<br />Rest Countries | JQuery | JS | Bootstrap<br />
+              Konexio | Paris <br />
+              Janvier 2022
+            </h4>
+          </div>
+        </div>
+      </a>
 
-        <!-- Projet 2 -->
-        <a class="move" href="https://claireav.github.io/Jeanne/index.html" target="_blank">
-            <div class="proj left simplon_ecommerce">
-                <img class="img jeanne" src="images/jeanneboutique.png" alt="">
-                <div class="title_box left">
-                    <h3 class="hack">Jeanne Boutique</h3>
-                    <h4>Site vitrine de e-commerce <br> (Front-End) <br> Projet en équipe <br> Simplon | Paris <br> Juin 2021</h4>
-                </div>
-            </div>
-        </a>
+      <!-- Projet 4 -->
+      <a
+        class="move"
+        href="https://pauline-wim.github.io/digitous-html-cuisine-main/index.html"
+        target="_blank"
+      >
+        <div class="proj left">
+          <img class="img cuisine" src="images/cuizine.png" alt="" />
+          <div class="title_box left">
+            <h3 class="hack">Cui'zine</h3>
+            <h4>
+              Projet Bootstrap <br />
+              HTML / CSS / BOOTSTRAP <br />
+              Konexio | Paris <br />
+              Décembre 2021
+            </h4>
+          </div>
+        </div>
+      </a>
 
-        <!-- Projet 3 -->
-        <a class="move" href="https://the-expanse-projet1.netlify.app/" target="_blank">
-            <div class="proj simplon_serietv">
-                <img class="img expanse" src="images/expanse.png" alt="">
-                <div class="title_box">
-                    <h3 class="hack">The Expanse, <br><span>ma série préférée</span></h3>
-                    <h4>Projet Front-End <br> Simplon | Paris <br> Juin 2021</h4>
-                </div>
-            </div>
-        </a>
+      <!-- Projet 1 -->
+      <a
+        class="move"
+        href="https://pauline-wim.github.io/hackeuse/index.html"
+        target="_blank"
+      >
+        <div class="proj simplon_fil_rouge">
+          <img class="img hacker" src="images/hackeuse.png" alt="" />
+          <div class="title_box row">
+            <h3 class="hack">
+              La <br />
+              Hack <br />
+              euse <br />
+              au <br />
+              Ciné <br />
+              ma
+            </h3>
+            <h4>
+              Projet fil rouge <br />
+              HTML / CSS / JS<br />
+              Simplon | Paris <br />
+              Juillet 2021
+            </h4>
+          </div>
+        </div>
+      </a>
 
-        <!-- Projet 4 -->
-        <a class="move" href="https://pauline-wim.github.io/digitous-html-cuisine-main/index.html" target="_blank">
-            <div class="proj left">
-                <img class="img cuisine" src="images/cuizine.png" alt="">
-                <div class="title_box left">
-                    <h3 class="hack">Cui'zine</h3>
-                    <h4>Projet Bootstrap <br> HTML / CSS / BOOTSTRAP <br> Konexio | Paris <br> Décembre 2021</h4>
-                </div>
-            </div>
-        </a>
+      <!-- Projet 2 -->
+      <a
+        class="move"
+        href="https://claireav.github.io/Jeanne/index.html"
+        target="_blank"
+      >
+        <div class="proj left simplon_ecommerce">
+          <img class="img jeanne" src="images/jeanneboutique.png" alt="" />
+          <div class="title_box left">
+            <h3 class="hack">Jeanne Boutique</h3>
+            <h4>
+              Site vitrine de e-commerce <br />
+              Projet Front-End <br />
+              En équipe <br />(5 awesome gals)<br />
+              HTML / CSS / JS / Git<br />
+              Simplon | Paris <br />
+              Juin 2021
+            </h4>
+          </div>
+        </div>
+      </a>
 
-        <!-- Projet 5 -->
-        <!-- <div id="rover" class="proj">
+      <!-- Projet 3 -->
+      <a
+        class="move"
+        href="https://the-expanse-projet1.netlify.app/"
+        target="_blank"
+      >
+        <div class="proj simplon_serietv">
+          <img class="img expanse" src="images/expanse.png" alt="" />
+          <div class="title_box">
+            <h3 class="hack">
+              The Expanse, <br /><span>ma série préférée</span>
+            </h3>
+            <h4>
+              Projet Front-End <br />
+              Intégration HTML / CSS <br />
+              Simplon | Paris <br />
+              Juin 2021
+            </h4>
+          </div>
+        </div>
+      </a>
+
+      <!-- Projet 5 -->
+      <!-- <div id="rover" class="proj">
             <img src="" alt="">
             <div class="title_box">
                 <h3>Rover</h3>
@@ -152,59 +246,117 @@
             </div>
         </div> -->
 
-        <!-- Projet 6 -->
-        <a class="move" href="https://pauline-wim.github.io/konexio-projet-fullstack/front/index.html" target="_blank">
-            <div class="proj left konexio_API">
-                <img class="opacity" src="images/restcountries.png" alt="">
-                <div class="title_box left">
-                    <h3 class="hack">Projet <br> Rest API</h3>
-                    <h4>Déployer une API<br>Rest Countries | JQuery | JS | Bootstrap<br> Konexio | Paris <br> Janvier 2022</h4>
-                </div>
+      <!-- Projet 7 -->
+      <!-- <div class="separate"></div> -->
+      <!-- <h1 id="avant">Avant...</h1> -->
+      <a class="move" href="avant.html">
+        <div class="proj projet_art">
+          <img class="img art" src="img/serie2/DSC_0315.JPG" alt="" />
+          <div class="title_box">
+            <div class="title_box_art">
+              <h3 class="hack title-proj-art">Projets artistiques</h3>
+              <p class="title-proj-art">#NotWebDev</p>
             </div>
-        </a>
-
-        <!-- Projet 7 -->
-        <!-- <div class="separate"></div> -->
-        <!-- <h1 id="avant">Avant...</h1> -->
-        <a class="move" href="avant.html">
-            <div class="proj projet_art">
-                <img class="img art" src="img/serie2/DSC_0315.JPG" alt="">
-                <div class="title_box">
-                    <div class="title_box_art">
-                        <h3 class="hack title-proj-art">Projets artistiques</h3>
-                        <p class="title-proj-art">#NotWebDev</p>
-                    </div>
-                    <h4>Réalisations vidéos & photographiques <br> UCLA Extension | Los Angeles USA <br> ESADHaR | Le Havre <br> Avant 2021.</h4>
-                </div>
-            </div>
-        </a>
+            <h4>
+              Réalisations vidéos & photographiques <br />
+              UCLA Extension | Los Angeles USA <br />
+              ESADHaR | Le Havre <br />
+              Avant 2021.
+            </h4>
+          </div>
+        </div>
+      </a>
     </main>
 
     <!-- CONTACT -->
     <footer id="contact" class="contact">
-        <h1>Contact</h1>
-        <h2><a class="breathe" href="mailto:pauline.wimmer@gmail.com">pauline.wimmer@gmail.com</a></h2>
-        <div class="social">
-            <!-- <h4>Social</h4> -->
-            <a class="breathe" href="https://github.com/pauline-wim" target="_blank">
-                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" class="svg-inline--fa fa-github fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
-                <p>GitHub</p>
-            </a>
-            <a class="breathe" href="https://www.linkedin.com/in/pauline-wimmer/" target="_blank">
-                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin" class="svg-inline--fa fa-linkedin fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>
-                <p>LinkedIn</p>
-            </a>
-            <a class="breathe" href="https://vimeo.com/paulinewimmer" target="_blank">
-                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="vimeo" class="svg-inline--fa fa-vimeo fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M403.2 32H44.8C20.1 32 0 52.1 0 76.8v358.4C0 459.9 20.1 480 44.8 480h358.4c24.7 0 44.8-20.1 44.8-44.8V76.8c0-24.7-20.1-44.8-44.8-44.8zM377 180.8c-1.4 31.5-23.4 74.7-66 129.4-44 57.2-81.3 85.8-111.7 85.8-18.9 0-34.8-17.4-47.9-52.3-25.5-93.3-36.4-148-57.4-148-2.4 0-10.9 5.1-25.4 15.2l-15.2-19.6c37.3-32.8 72.9-69.2 95.2-71.2 25.2-2.4 40.7 14.8 46.5 51.7 20.7 131.2 29.9 151 67.6 91.6 13.5-21.4 20.8-37.7 21.8-48.9 3.5-33.2-25.9-30.9-45.8-22.4 15.9-52.1 46.3-77.4 91.2-76 33.3.9 49 22.5 47.1 64.7z"></path></svg>
-                <p>Vimeo</p>
-            </a>
-        </div>
-        <div class="signature">
-            <p>© Pauline Wimmer 2021.</p>
-            <p><span>Portfolio construit de A à Z <br> avec beaucoup d'amour <br> & d'attention.</span></p>
-        </div>
+      <h1>Contact</h1>
+      <h2>
+        <a class="breathe" href="mailto:pauline.wimmer@gmail.com"
+          >pauline.wimmer@gmail.com</a
+        >
+      </h2>
+      <div class="social">
+        <!-- <h4>Social</h4> -->
+        <a
+          class="breathe"
+          href="https://github.com/pauline-wim"
+          target="_blank"
+        >
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fab"
+            data-icon="github"
+            class="svg-inline--fa fa-github fa-w-16"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 496 512"
+          >
+            <path
+              fill="currentColor"
+              d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+            ></path>
+          </svg>
+          <p>GitHub</p>
+        </a>
+        <a
+          class="breathe"
+          href="https://www.linkedin.com/in/pauline-wimmer/"
+          target="_blank"
+        >
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fab"
+            data-icon="linkedin"
+            class="svg-inline--fa fa-linkedin fa-w-14"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+          >
+            <path
+              fill="currentColor"
+              d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+            ></path>
+          </svg>
+          <p>LinkedIn</p>
+        </a>
+        <a
+          class="breathe"
+          href="https://vimeo.com/paulinewimmer"
+          target="_blank"
+        >
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fab"
+            data-icon="vimeo"
+            class="svg-inline--fa fa-vimeo fa-w-14"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+          >
+            <path
+              fill="currentColor"
+              d="M403.2 32H44.8C20.1 32 0 52.1 0 76.8v358.4C0 459.9 20.1 480 44.8 480h358.4c24.7 0 44.8-20.1 44.8-44.8V76.8c0-24.7-20.1-44.8-44.8-44.8zM377 180.8c-1.4 31.5-23.4 74.7-66 129.4-44 57.2-81.3 85.8-111.7 85.8-18.9 0-34.8-17.4-47.9-52.3-25.5-93.3-36.4-148-57.4-148-2.4 0-10.9 5.1-25.4 15.2l-15.2-19.6c37.3-32.8 72.9-69.2 95.2-71.2 25.2-2.4 40.7 14.8 46.5 51.7 20.7 131.2 29.9 151 67.6 91.6 13.5-21.4 20.8-37.7 21.8-48.9 3.5-33.2-25.9-30.9-45.8-22.4 15.9-52.1 46.3-77.4 91.2-76 33.3.9 49 22.5 47.1 64.7z"
+            ></path>
+          </svg>
+          <p>Vimeo</p>
+        </a>
+      </div>
+      <div class="signature">
+        <p>© Pauline Wimmer 2021.</p>
+        <p>
+          <span
+            >Portfolio construit de A à Z <br />
+            avec beaucoup d'amour <br />
+            & d'attention.</span
+          >
+        </p>
+      </div>
     </footer>
 
-    <script src="script.js"></script>  
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
