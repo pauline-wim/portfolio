@@ -173,6 +173,10 @@ button:hover {
   background: black;
 }
 
+.emoji {
+  font-size: 1.4rem;
+}
+
 .projets {
   background: black;
 }
@@ -188,7 +192,7 @@ button:hover {
 } */
 
 .proj {
-  height: 90vh;
+  height: 80vh;
   /* color: #ffd527; */
   color: white;
   /* display: flex; */
@@ -291,8 +295,8 @@ h3 {
 
 .projet_art {
   display: grid;
-  grid-template-columns: 32% 1fr;
-  grid-template-areas: "title_box img";
+  grid-template-columns: 1fr 32%;
+  grid-template-areas: "img title_box";
 }
 
 .title_box {
