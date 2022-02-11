@@ -1,34 +1,34 @@
 //  MENU RESPONSIVE
 function showResponsiveMenu() {
-    let menu = document.getElementById("topnav_responsive_menu");
-    let icon = document.getElementById("topnav_hamburger_icon");
-    let root = document.getElementById("root");
-    if (menu.className === "") {
-      menu.className = "open";
-      icon.className = "open";
-      root.style.overflowY = "hidden";
-    } else {
-      menu.className = "";                    
-      icon.className = "";
-      root.style.overflowY = "";
-    }
+  let menu = document.getElementById("topnav_responsive_menu");
+  let icon = document.getElementById("topnav_hamburger_icon");
+  let root = document.getElementById("root");
+  if (menu.className === "") {
+    menu.className = "open";
+    icon.className = "open";
+    root.style.overflowY = "hidden";
+  } else {
+    menu.className = "";
+    icon.className = "";
+    root.style.overflowY = "";
+  }
 }
 
 // POP-UP - CV
 
-const eventBtn = document.getElementById('eventBtn');
-const cv = document.getElementById('cv');
+const eventBtn = document.getElementById("eventBtn");
+const cv = document.getElementById("cv");
 
-eventBtn.addEventListener('click', open);
-cv.addEventListener('click', close);
-window.removeEventListener('click', close);
+eventBtn.addEventListener("click", open);
+cv.addEventListener("click", close);
+window.removeEventListener("click", close);
 
 function open() {
-  cv.style.display = 'flex';
+  cv.style.display = "flex";
 }
 
 function close() {
-  cv.style.display = 'none';
+  cv.style.display = "none";
 }
 
 // POP-UP - SERIES PHOTO
@@ -51,15 +51,16 @@ function close() {
 //   dredge.style.display = 'none';
 // }
 
-function DredgeGallery() {
-  console.log("onclick call function dredgeGallery")
-  const dredge = document.getElementById('dredge');
+// TODO - slider photo
+// function DredgeGallery() {
+//   console.log("onclick call function dredgeGallery");
+//   const dredge = document.getElementById("dredge");
 
-  if (dredge.style.display === "flex") {
-    console.log("if display already flex, change display to none")
-    dredge.style.display === "none";
-  } else {
-    console.log("else change display to flex")
-    dredge.style.display === "flex";
-  }
-};
+//   if (dredge.style.display === "flex") {
+//     console.log("if display already flex, change display to none");
+//     dredge.style.display = "none";
+//   } else {
+//     console.log("else change display to flex");
+//     dredge.style.display = "flex";
+//   }
+// }
